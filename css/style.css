@@ -1,0 +1,12 @@
+body {
+	background-image: url('../img/bg.png');
+}
+
+.jumbotron {
+	margin-top: 40px;
+}
+
+#git-icon {
+	margin-top: 50px;
+	width: 45px;
+}
