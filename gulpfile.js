@@ -4,7 +4,7 @@ const cssnano = require('gulp-cssnano');
 const gulpIf = require('gulp-if');
 
 gulp.task('useref', () => {
-  return gulp.src('index.html')
+  return gulp.src('src/index.html')
     .pipe(useref())
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))

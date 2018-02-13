@@ -58,4 +58,4 @@ typings/
 .env
 
 # next.js build output
-.nextgit
+.nextgitgit subtree push --prefix dist origin gh-pages
