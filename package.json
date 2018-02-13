@@ -1,0 +1,33 @@
+{
+  "name": "luizbaldi.github.io",
+  "version": "1.0.0",
+  "description": "Personal homepage website",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizbaldi/luizbaldi.github.io.git"
+  },
+  "keywords": [
+    "luiz",
+    "baldi"
+  ],
+  "author": "Luiz Baldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizbaldi/luizbaldi.github.io/issues"
+  },
+  "homepage": "https://github.com/luizbaldi/luizbaldi.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-useref": "^3.1.4"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "materialize-css": "^0.100.2"
+  }
+}

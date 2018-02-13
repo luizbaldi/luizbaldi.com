@@ -5,17 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<title>Luiz Baldi - Portfolio</title>
 
-	<!-- CSS  -->
+	<!-- External dependencies -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="src/css/materialize.min.css" media="screen,projection"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link href="src/css/scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen,projection"/>
+
+	<!-- CSS  -->
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" />
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="src/css/scrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="src/css/style.css" type="text/css" />
+	<!--endbuild-->
 
 	<!-- JS -->
-	<script src="src/js/jquery.min.js"></script>
-	<script src="src/js/materialize.min.js"></script>
+	<!--build:js js/main.min.js -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 	<script src="src/js/init.js"></script>
+	<!-- endbuild -->
 </head>
 
 <body>
@@ -27,7 +33,7 @@
 			<ul id="nav-mobile" class="side-nav fixed side-bar white-text">
 				<li class="logo">
 					<a id="logo-container" href="http://nikhilmaheshwari.com/" class="brand-logo white-text">
-						<object id="front-page-logo" class="circle" type="image/jpg" width="100" data="src/images/me.jpg">Your browser does not support SVG</object>
+						<object id="front-page-logo" class="circle" type="image/jpg" width="100" data="img/me.jpg">Your browser does not support SVG</object>
 						<h4>Luiz Baldi</h4>
 						<h6>Web Developer</h6>
 					</a>
@@ -37,10 +43,9 @@
 				<li class="side-link"><a class="white-text" href="#" link="#projects">Projects&nbsp;&nbsp;<i link="#projects" class="fa fa-file-text"></i></a></li>
 				<li class="side-link"><a class="white-text" href="#" link="#contact">Contact&nbsp;&nbsp;<i link="#contact" class="fa fa-envelope"></i></a></li>
 
-				<li class="side-link-footer center">
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="https://www.linkedin.com/in/luizbaldi/"><i class="fa fa-linkedin fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="https://github.com/luizbaldi" target="_blank"><i class="fa fa-github fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<li class="side-link-footer center white-text">
+					<a href="https://www.linkedin.com/in/luizbaldi/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+					<a href="https://github.com/luizbaldi" target="_blank"><i class="fa fa-github fa-lg"></i></a>
 				</li>
 			</ul>
 		</div>
