@@ -43,7 +43,7 @@
 .side-link-footer a {
   cursor: pointer;
   color: #FFF !important;
-  display: inline !important;
+  display: inline-block !important;
   padding: 0px !important;
 }
 
@@ -86,6 +86,11 @@ header, main, footer {
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out
+}
+
+/* Overriding this because last version of font-awesome */
+.side-nav li>a>[class^=mdi-], .side-nav li>a>i, .side-nav li>a>i.material-icons, .side-nav li>a li>a>[class*=mdi-] {
+  color: #fafafa;
 }
 
 @keyframes octocat-wave {
