@@ -1,6 +1,7 @@
 * {
   font-family: monospace;
   margin: 0;
+  overflow: hidden;
 }
 
 #particles {
@@ -11,19 +12,89 @@
   background-position: 50% 50%;
 }
 
-.container {
-  height: 100vh;
-  width: 100%;
+.panel {
+  background-color: #2d2d31bf;
+  color: #fafafa;
+  font-size: 1.2em;
   position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+header {
+  padding-top: 24px;
+  text-align: center;
+  z-index: 1;
+  color: #fafafa;
+  font-size: 1.4em;
+  position: relative;
+
+}
+
+.panel .title {
+  text-align: center;
+}
+
+.panel .title > p {
+  font-size: 0.8em;
+  padding-top: 8px;
+}
+
+.panel .title :last-child {
+  padding-top: 36px;
+}
+
+.panel .subtitle {
+  padding: 36px 20px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.panel .footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.panel .footer .contact .images {
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container .panel {
-  background-color: #26262b;
-  color: #fafafa;
-  width: 30%;
-  padding: 20px;
-  font-size: 1.2em;
+.panel .footer .contact .images img {
+  width: 34px;
+  margin: 8px 4px;
+}
+
+.panel .footer .message {
+  border-top: 1px solid #fafafa;
+  padding-top: 20px;
+  display: block;
+  width: 85%;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.panel .footer .message .typed {
+  display: inline-block;
+}
+
+.panel .footer .message .typed > i {
+  font-size: 0.7em;
+}
+
+.panel .footer .message .typed > p {
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: 70%;
+  }
 }

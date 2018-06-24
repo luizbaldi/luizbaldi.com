@@ -15,4 +15,4 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/img'))
 })
 
-gulp.task('default', ['useref']);
+gulp.task('default', ['useref', 'images']);
