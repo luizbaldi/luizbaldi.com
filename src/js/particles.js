@@ -15,43 +15,48 @@ function initParticles() {
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#fafafa"
         },
         "polygon": {
-          "nb_sides": 5
-      }
+          "nb_sides": 4
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 0.4,
+        "random": true,
         "anim": {
-          "enable": false,
-          "speed": 1,
+          "enable": true,
+          "speed": 10,
           "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 40,
+          "enable": true,
+          "speed": 15,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
+        "distance": 110,
+        "color": "#fafafa",
+        "opacity": 0.6,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -72,7 +77,7 @@ function initParticles() {
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
