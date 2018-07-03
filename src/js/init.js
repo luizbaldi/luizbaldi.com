@@ -1,5 +1,4 @@
 window.onload = () => {
-  console.log('Loading portfolio...')
-  initParticles()
+  appParticles.init()
   initTyped()
 }

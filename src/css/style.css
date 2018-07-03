@@ -8,7 +8,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: darkslategray;
   background-position: 50% 50%;
 }
 
@@ -91,6 +90,20 @@ header {
 
 .panel .footer .message .typed > p {
   margin-top: 4px;
+}
+
+#randomize {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #fafafa;
+  background-color: #2d2d31bf;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+#randomize:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
