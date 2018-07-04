@@ -127,6 +127,8 @@ const appParticles = {
     options.particles.color.value = particlesColor
     options.particles.size.value = sizeValue
 
+    this.clearOldParticles()
+
     particlesJS('particles', options)
 
     /* Background color */
@@ -135,5 +137,9 @@ const appParticles = {
 
   getParticlesEl() {
     return document.getElementById('particles')
+  },
+
+  clearOldParticles() {
+    window.removeEventListener('resize', window.onParticlesResize)
   }
 }
