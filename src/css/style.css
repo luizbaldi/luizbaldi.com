@@ -97,13 +97,15 @@ header {
   right: 12px;
   top: 12px;
   color: #fafafa;
-  background-color: #2d2d31bf;
-  padding: 12px;
+  background-color: #b5b5b557;
+  padding: 6px 6px 4px 6px;
   border-radius: 4px;
+  transition: background-color ease-in .1s
 }
 
 #randomize:hover {
   cursor: pointer;
+  background-color: #ffffff57;
 }
 
 @media (max-width: 768px) {
