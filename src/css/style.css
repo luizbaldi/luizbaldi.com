@@ -35,13 +35,9 @@ header {
 
 }
 
-.panel .title {
-  text-align: center;
-}
-
 .panel .title > p {
   font-size: 0.8em;
-  padding-top: 8px;
+  padding-top: 20px;
 }
 
 .panel .title :last-child {
@@ -49,13 +45,11 @@ header {
 }
 
 .panel .subtitle {
-  padding: 36px 20px;
-  text-align: center;
+  padding: 36px 0px;
   line-height: 22px;
 }
 
 .panel .footer {
-  text-align: center;
   font-size: 0.8em;
 }
 
@@ -75,8 +69,7 @@ header {
   border-top: 1px solid #fafafa;
   padding-top: 20px;
   display: block;
-  width: 85%;
-  margin: auto;
+  width: 100%;
   margin-top: 12px;
 }
 
