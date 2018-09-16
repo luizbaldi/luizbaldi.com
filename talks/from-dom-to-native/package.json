@@ -1,0 +1,23 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "spectacle": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.9.7"
+  }
+}
