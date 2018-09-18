@@ -11,7 +11,7 @@ const colors = {
 
 const fonts = {
   primary: "monospace",
-  secondary: "Montserrat"
+  secondary: "Open Sans"
 }
 
 const theme = createTheme(colors, fonts)

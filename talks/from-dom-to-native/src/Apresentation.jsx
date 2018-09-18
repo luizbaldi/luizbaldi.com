@@ -20,8 +20,12 @@ import {
 } from "spectacle"
 
 /* images */
-import reactImg from './assets/react.png'
-import domTreeImg from './assets/dom-tree.gif'
+const reactImg = 'https://i.imgur.com/F5rPWQz.png'
+const domTreeImg = 'https://i.imgur.com/Wg7ukCZ.gif'
+const webBg = 'https://i.imgur.com/fPmGIAc.jpg'
+const browsersBg = 'https://i.imgur.com/ASQf6wv.jpg'
+const jsEnginesImg = 'https://i.imgur.com/ZFdznV1.png'
+const narutoBg = 'https://media.giphy.com/media/ohT97gdpR40vK/giphy.gif'
 
 const Apresentation = () => (
   <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
@@ -36,7 +40,7 @@ const Apresentation = () => (
     <Slide
       transition={["slide"]}
       bgColor={colors.blue}
-      bgImage='https://media.giphy.com/media/ohT97gdpR40vK/giphy.gif'
+      bgImage={narutoBg}
       bgDarken={0.82}
     >
       <Text textColor={colors.primary} padding="28" textSize='26'>Este que vos fala:</Text>
@@ -46,18 +50,25 @@ const Apresentation = () => (
     </Slide>
     <Slide transition={["slide"]} bgColor={colors.pink}>
       <Text padding="0 0 40px 0" textColor={colors.grey} textSize={28} italic>Overview</Text>
-      <List>
-        <ListItem padding='12' textColor={colors.primary}>React (intro)</ListItem>
-        <ListItem padding='12' textColor={colors.primary}>React Web (DOM)</ListItem>
-        <ListItem padding='12' textColor={colors.primary}>React Native (Mobile)</ListItem>
-        <ListItem padding='12' textColor={colors.primary}>Mindset</ListItem>
-      </List>
+      <Text textAlign='left'>
+        <Text padding='12' textColor={colors.primary}>- React (intro)</Text>
+        <Text padding='12' textColor={colors.primary}>
+          - Arquitetura e experiência de desenvolvimento
+          <Text textColor={colors.grey} textSize='22' italic>
+            React Web (DOM) e React Native
+          </Text>
+        </Text>
+        {/* <Text padding='12' textColor={colors.primary}>Mindset</Text> */}
+        <Text padding='12' textColor={colors.primary} italic>- To infinity, and beyond 🚀</Text>
+      </Text>
     </Slide>
     <Slide transition={["slide"]} bgColor={colors.primary}>
       <Layout>
         <Fit>
-          <div style={{ width: '350px' }}>
-            <Text textColor={colors.blue} padding="22" textSize='34'>O <i>jovem</i> React</Text>
+          <div style={{ width: '380px', marginTop: 22 }}>
+            <Text textColor={colors.blue} padding="22" textSize='34'>
+              O <i>jovem</i> React...
+            </Text>
             <Image src={reactImg} height={240} style={{ objectFit: 'contain' }} />
           </div>
         </Fit>
@@ -68,8 +79,14 @@ const Apresentation = () => (
           <List margin='22px 32px'>
             <Appear>
               <Text padding='16' textColor={colors.black} textAlign='center'>
-                UI Tree
-                <Text textSize='16' textColor={colors.grey} textAlign='center'>(somente)</Text>
+                Cuida da UI
+                <Text textSize='20' textColor={colors.grey} textAlign='center'>(somente)</Text>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text padding='16' textColor={colors.blakc} textAlign='center' italic>
+                CBA
+                <Text textSize='20' textColor={colors.grey} textAlign='center'>(Component-based architecture)</Text>
               </Text>
             </Appear>
             <Appear>
@@ -82,31 +99,52 @@ const Apresentation = () => (
     <Slide transition={['slide', 'fade']} bgColor={colors.green}>
       <Text padding='0 0 22px 0' textColor={colors.primary}>React-DOM</Text>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>No início do React...</Text>
-      </Appear>
-      <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Separação do repositório <i>(react-dom)</i></Text>
+        <Text padding='12' textColor={colors.primary} textSize='30'>Mono-repo no início</Text>
       </Appear>
     </Slide>
+    <Slide transition={['slide', 'fade']} bgColor={colors.green}>
+      <Heading size={1} caps fit textColor="primary">
+        Separação do repositório
+      </Heading>
+      <Text padding='0 0 22px 0' textColor={colors.primary} italic>(react-dom)</Text>
+    </Slide>
+    <Slide
+      bgColor={colors.primary}
+      bgImage={webBg}
+      bgDarken={0.9}
+      transition={['slide', 'fade']}
+    >
+      <Heading size={1} caps fit textColor="primary" textFont='secondary'>
+        Web
+      </Heading>
+      <Text padding='0 0 22px 0' textColor={colors.primary} italic>Ambiente de desenvolvimento</Text>
+    </Slide>
     <Slide transition={['slide', 'fade']} bgColor='white'>
-      <img src={domTreeImg}/>
+      <img src={domTreeImg} />
       <Text textSize='20' textColor={colors.grey} padding='30'>
         Eu sei que todo mundo tá cansado dessa imagem mas...
       </Text>
     </Slide>
+    <Slide
+      bgColor={colors.pink}
+      transition={['slide', 'fade']}
+      bgImage={browsersBg}
+      bgDarken={0.2}
+      align='flex-end flex-end'
+    >
+      <Heading size={2} caps textColor={colors.pink} textFont='secondary'>
+        Baráusers
+      </Heading>
+    </Slide>
     <Slide transition={['slide', 'fade']} bgColor={colors.green}>
-      <Text padding='0 0 22px 0' textColor={colors.primary}>Web: Ambiente de desenvolvimento</Text>
+      <Text padding='12' textColor={colors.primary} textSize='30'>JS Engine</Text>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Browser</Text>
-      </Appear>
-      <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Engine (máquina virtual)</Text>
+        <Image src={jsEnginesImg} style={{ objectFit: 'contain' }} />
       </Appear>
     </Slide>
     <Slide
       transition={["slide"]}
       bgColor={colors.primary}
-      bgImage="https://media.giphy.com/media/fv4tD2kW1PSgg/giphy.gif"
       align='flex-end flex-end'
     >
       <Text textColor={colors.pink} textSize={26} padding={22}>{'<3'}</Text>
