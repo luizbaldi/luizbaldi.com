@@ -50,22 +50,22 @@ const Apresentation = () => (
       bgImage={narutoBg}
       bgDarken={0.82}
     >
-      <Text textColor={colors.primary} padding="28" textSize='26'>Este que vos fala:</Text>
-      <Text textColor={colors.grey} padding="12" textSize='34'>Front-end engineer</Text>
-      <Text textColor={colors.grey} padding="12" textSize='34'>@MaxMilhas</Text>
-      <Text textColor={colors.grey} padding="12" textSize='34' bold>JavaScript {'<3'}</Text>
+      <Text textColor={colors.primary} padding="28" textSize='2em'>Este que vos fala:</Text>
+      <Text textColor={colors.grey} padding="12" textSize='2.8em'>Front-end engineer</Text>
+      <Text textColor={colors.grey} padding="12" textSize='2.8em'>@MaxMilhas</Text>
+      <Text textColor={colors.grey} padding="12" textSize='2.8em' bold>JavaScript {'<3'}</Text>
     </Slide>
     <Slide transition={["slide"]} bgColor={colors.pink}>
-      <Text padding="0 0 40px 0" textColor={colors.grey} textSize={28} italic>Overview</Text>
+      <Text padding="0 0 40px 0" textColor={colors.grey} textSize='1.8em' italic>Overview</Text>
       <Text textAlign='left'>
         <Appear>
-          <Text padding='12' textColor={colors.primary}>- React (intro)</Text>
+          <Text padding='12' textSize='2em' textColor={colors.primary}>- React (intro)</Text>
         </Appear>
         <Appear>
-          <Text padding='12' textColor={colors.primary}>- Experiência de desenvolvimento</Text>
+          <Text padding='12' textSize='2em' textColor={colors.primary}>- Experiência de desenvolvimento</Text>
         </Appear>
         <Appear>
-          <Text padding='12' textColor={colors.primary}>
+          <Text padding='12' textSize='2em' textColor={colors.primary}>
             - Arquitetura
             <Text textColor={colors.grey} textSize='22' italic>
               React Web (DOM) e React Native
@@ -78,7 +78,7 @@ const Apresentation = () => (
       <Layout>
         <Fit>
           <div style={{ width: '380px', marginTop: 22 }}>
-            <Text textColor={colors.blue} padding="22" textSize='34'>
+            <Text textColor={colors.blue} padding="22" textSize='2em'>
               O <i>jovem</i> React...
             </Text>
             <Image src={reactImg} height={240} style={{ objectFit: 'contain' }} />
@@ -90,28 +90,28 @@ const Apresentation = () => (
         <Fill>
           <List margin='22px 32px'>
             <Appear>
-              <Text padding='16' textColor={colors.black} textAlign='center'>
+              <Text padding='16' textColor={colors.black} textAlign='center' textSize='2em'>
                 Cuida da UI Tree
                 <Text textSize='20' textColor={colors.grey} textAlign='center'>(somente)</Text>
               </Text>
             </Appear>
             <Appear>
-              <Text padding='16' textColor={colors.blakc} textAlign='center' italic>
+              <Text padding='16' textColor={colors.blakc} textAlign='center' textSize='2em' italic>
                 CBA
                 <Text textSize='20' textColor={colors.grey} textAlign='center'>(Component-based architecture)</Text>
               </Text>
             </Appear>
             <Appear>
-              <Text padding='16' textColor={colors.pink} textAlign='center' italic>Renderer-agnostic</Text>
+              <Text padding='16' textColor={colors.pink} textAlign='center' textSize='2em' italic>Renderer-agnostic</Text>
             </Appear>
           </List>
         </Fill>
       </Layout>
     </Slide>
     <Slide {...defaultTransition} bgColor={colors.green}>
-      <Text padding='0 0 22px 0' textColor={colors.primary}>React-DOM</Text>
+      <Text padding='0 0 22px 0' textColor={colors.primary} textSize='3em'>React-DOM</Text>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Mono-repo no início</Text>
+        <Text padding='12' textColor={colors.primary} textSize='2.2em'>Mono-repo no início</Text>
       </Appear>
     </Slide>
     <Slide {...defaultTransition} bgColor={colors.green}>
@@ -119,13 +119,13 @@ const Apresentation = () => (
         Surge o React Native (2014)
       </Heading>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30' padding='32'>O React precisa saber sobre a renderização no DOM?</Text>
+        <Text padding='12' textColor={colors.primary} textSize='2.2em' padding='32'>O React precisa saber sobre a renderização no DOM?</Text>
       </Appear>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Ocorre a separação do repositório (react-dom)</Text>
+        <Text padding='12' textColor={colors.primary} textSize='2.2em'>Ocorre a separação do repositório (react-dom)</Text>
       </Appear>
       <Appear>
-        <Text padding='12' textColor={colors.primary} textSize='30'>Desacoplamento</Text>
+        <Text padding='12' textColor={colors.primary} textSize='2.2em'>Desacoplamento</Text>
       </Appear>
     </Slide>
     <Slide
@@ -150,7 +150,7 @@ const Apresentation = () => (
       </Heading>
     </Slide>
     <Slide  bgColor={colors.green}>
-      <Text padding='12' textColor={colors.primary}>JS Engines</Text>
+      <Text padding='12' textColor={colors.primary} textSize='2em'>JS Engines</Text>
       <Appear>
         <Image src={jsEnginesImg} style={{ objectFit: 'contain' }} />
       </Appear>
@@ -158,7 +158,7 @@ const Apresentation = () => (
     <Slide {...defaultTransition} bgColor={colors.pink}>
       <Text textColor={colors.primary} padding='26' textFont='secondary'>Beleza mas o que as engines fazem?</Text>
       <Appear>
-        <Text textColor={colors.primary} padding='26'>- Code parsing (to bytecode)</Text>
+        <Text textColor={colors.primary} padding='26'>- Código de alto nivel (JS) -> Código de máquina (bytecode interpretado)</Text>
       </Appear>
       <Appear>
         <Text textColor={colors.primary}>- Optimization</Text>
