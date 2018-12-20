@@ -114,32 +114,20 @@ const appParticles = {
 
   init() {
     const options = this.getDefaultOptions()
+    const { backgroundColor, particlesColor, particlesValue, sizeValue } = getRandomValues()
 
-    this.getParticlesEl().style.backgroundColor = 'darkslategray'
-
-    const particlesInstance = particlesJS('particles', options)
-  },
-
-  generate({ backgroundColor, particlesColor }, particlesValue, sizeValue) {
-    const options = this.getDefaultOptions()
-
+    /* prepare options with random init values */
     options.particles.number.value = particlesValue
     options.particles.color.value = particlesColor
     options.particles.size.value = sizeValue
 
-    this.clearOldParticles()
+    const particlesInstance = particlesJS('particles', options)
 
-    particlesJS('particles', options)
-
-    /* Background color */
+    /* background color */
     this.getParticlesEl().style.backgroundColor = backgroundColor
   },
 
   getParticlesEl() {
     return document.getElementById('particles')
-  },
-
-  clearOldParticles() {
-    window.removeEventListener('resize', window.onParticlesResize)
   }
 }

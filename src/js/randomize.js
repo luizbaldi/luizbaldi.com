@@ -1,9 +1,11 @@
-const randomize = () => {
-  const color = randomGenerator.colors()
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+
+const getRandomValues = () => {
+  const { backgroundColor, particlesColor } = randomGenerator.colors()
   const particlesValue = randomGenerator.particlesValue()
   const sizeValue = randomGenerator.sizeValue()
 
-  appParticles.generate(color, particlesValue, sizeValue)
+  return { backgroundColor, particlesColor, particlesValue, sizeValue }
 }
 
 const randomGenerator = {
@@ -26,8 +28,8 @@ const randomGenerator = {
         particlesColor: '#C5D86D'
       },
       {
-        backgroundColor: '#fafafa',
-        particlesColor: '#000000'
+        backgroundColor: 'darkslategray',
+        particlesColor: '#ffffff'
       }
     ]
 

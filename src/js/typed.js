@@ -1,8 +1,8 @@
 function initTyped() {
   const  options = {
-    strings: ["", "<i>boo, almost forgot:</i>", "<p>Simplicity. Always.</p>"],
-    typeSpeed: 80,
-    startDelay: 1500
+    strings: ["", "<p>boo, almost forgot...</p>", "<p>simplicity, always.</p>"],
+    typeSpeed: 70,
+    startDelay: 1400
   }
 
   const typed = new Typed(".typed", options);

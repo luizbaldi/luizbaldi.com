@@ -68,13 +68,15 @@ header {
 .panel .footer .message {
   border-top: 1px solid #fafafa;
   padding-top: 20px;
-  display: block;
-  width: 100%;
+  display: flex;
+  flex: 1;
   margin-top: 12px;
+  align-items: center;
 }
 
 .panel .footer .message .typed {
   display: inline-block;
+  margin-bottom: 2px;
 }
 
 .panel .footer .message .typed > i {
