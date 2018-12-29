@@ -15,4 +15,9 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/img'))
 })
 
-gulp.task('default', ['useref', 'images']);
+gulp.task('fonts', () => {
+  return gulp.src('src/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
+
+gulp.task('default', ['useref', 'images', 'fonts']);
