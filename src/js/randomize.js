@@ -10,13 +10,13 @@ const getRandomValues = () => {
 
 const randomGenerator = {
   particlesValue() {
-    return getRandomInt(30, 150)
+    return getRandomInt(30, 80)
   },
 
   colors() {
     const matchingColors = [
       {
-        backgroundColor: 'palevioletred',
+        backgroundColor: '#b15b77',
         particlesColor: '#ffefd5'
       },
       {
@@ -28,8 +28,12 @@ const randomGenerator = {
         particlesColor: '#C5D86D'
       },
       {
-        backgroundColor: 'darkslategray',
+        backgroundColor: '#3a6f6f',
         particlesColor: '#ffffff'
+      },
+      {
+        backgroundColor: '#171717',
+        particlesColor: '#fafafa'
       }
     ]
 
@@ -37,7 +41,7 @@ const randomGenerator = {
   },
 
   sizeValue() {
-    return getRandomInt(2, 12)
+    return getRandomInt(2, 8)
   }
 }
 

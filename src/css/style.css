@@ -24,7 +24,7 @@
 }
 
 .panel {
-  background-color: #2d2d31bf;
+  background-color: #0b0b0c87;
   color: #fafafa;
   font-size: 1.2em;
   position: absolute;
@@ -53,11 +53,11 @@ header {
 }
 
 .panel .title :last-child {
-  padding-top: 36px;
+  padding: 28px 0;
 }
 
 .panel .subtitle {
-  padding: 36px 0px;
+  padding-bottom: 28px;
   line-height: 22px;
   font-size: 0.9em;
 }
@@ -79,7 +79,7 @@ header {
 }
 
 .panel .footer .message {
-  border-top: 1px solid #fafafa;
+  border-top: 1px solid #fafafa78;
   padding-top: 20px;
   display: flex;
   flex: 1;
