@@ -39,7 +39,7 @@ const useWindowSizeExample = require('./assets/useWindowSizeExample.png')
 const defaultTransition = ['slide', 'fade']
 
 const Presentation = () => (
-  <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
+  <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme} progress='none'>
     <Slide transition={['zoom']} bgColor={colors.primary}>
       <Heading size={1} fit caps lineHeight={1} textColor={colors.black}>
         Entendendo React Hooks
@@ -104,7 +104,7 @@ const Presentation = () => (
         class based component
       </Text>
       <Appear>
-        <Image src={statefulClassCounter} style={{ objectFit: 'contain', maxHeight: '80vh' }} />
+        <Image src={statefulClassCounter} style={{ objectFit: 'contain', maxHeight: '75vh' }} />
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
@@ -188,7 +188,7 @@ const Presentation = () => (
       <Appear>
         <div>
           <Text margin='40px 0 0 0' textColor={colors.primary}>
-            simplifica padrões complexos como HoC’s e render props
+            simplifica padrões complexos como HOC’s e render props
           </Text>
           <Text textSize='1em' textColor={colors.primary} margin='12px 0 0 0'>
             <i>hooks não criam “falsas hierarquias” na árvore</i>
@@ -273,8 +273,8 @@ const Presentation = () => (
       <Image src={statefulEffectCounter} style={{ objectFit: 'contain' }} />
     </Slide>
     <Slide transition={defaultTransition}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
-        pontos muito interessantes
+      <Text textColor={colors.black} textSize='1em' margin='30px'>
+        pontos muito interessantess
       </Text>
       <Appear>
         <Text textColor={colors.pink} margin='30px'>
@@ -350,7 +350,7 @@ const Presentation = () => (
     <Slide transition={defaultTransition} bgColor={colors.blue}>
       <Text textColor={colors.primary}>
         <strong>
-          a comunidade simplesmente vêm{' '}
+          a comunidade simplesmente vem{' '}
           <span style={{ color: colors.pink, backgroundColor: '#7cd3ff' }}> amando </span>
           {' '}Hooks
         </strong>
