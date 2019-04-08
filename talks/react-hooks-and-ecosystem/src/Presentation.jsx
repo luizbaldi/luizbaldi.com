@@ -60,47 +60,59 @@ const Presentation = () => (
       <Text textColor={colors.primary} padding='28' textSize='2em'>
         Quem vos fala:
       </Text>
-      <Text textColor={colors.grey} padding='12' textSize='2.8em'>
+      <Text textColor={colors.grey} padding='12' textSize='3.5em'>
         Desenvolvedor frontend
       </Text>
-      <Text textColor={colors.grey} padding='12' textSize='2.8em' bold>
+      <Text textColor={colors.grey} padding='12' textSize='3.5em' bold>
         JavaScript {'<3'}
       </Text>
-      <Text textColor={colors.grey} padding='12' textSize='1em'>
+      <Text textColor={colors.grey} padding='12' textSize='2em'>
         Terminei Naruto Shippuden!
       </Text>
-      <Text textColor={colors.grey} padding='12' textSize='1em'>
+      <Text textColor={colors.grey} padding='12' textSize='2em'>
         <i>Remote at @Divisio</i>
       </Text>
     </Slide>
     <Slide transition={defaultTransition}>
-      <Text textColor={colors.black} textSize='1em' margin='30px'>
+      <Text textColor={colors.black} textSize='2em' margin='30px'>
         conceitos importantes
       </Text>
       <Appear>
         <div>
-          <Text>stateful components</Text>
-          <Text textColor={colors.pink} textSize='1em' margin='30px'>
+          <Text textSize='3em'>
+            stateful components
+          </Text>
+          <Text textColor={colors.pink} textSize='2em' margin='30px'>
             x
           </Text>
-          <Text>stateless components</Text>
+          <Text textSize='3em'>
+            stateless components
+          </Text>
           <Appear>
             <div>
-              <Text textColor={colors.pink} textSize='1em' margin='30px'>
+              <Text textColor={colors.pink} textSize='2em' margin='30px'>
                 x
               </Text>
-              <Code>functional</Code>
+              <Code textSize='3em'>
+                functional
+              </Code>
             </div>
           </Appear>
         </div>
       </Appear>
     </Slide>
     <Slide>
-      <Text>vamos pensar de forma simples...</Text>
-      <Text>um componente de contador</Text>
+      <Text textSize='2em' margin='30px'>
+        vamos pensar de forma simples...
+      </Text>
+      <Appear>
+        <Code textSize='2em'>
+          um componente de contador
+        </Code>
+      </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         class based component
       </Text>
       <Appear>
@@ -108,7 +120,7 @@ const Presentation = () => (
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         functional counter (stateless)
       </Text>
       <Appear>
@@ -120,18 +132,18 @@ const Presentation = () => (
       bgImage={excitedBg}
     />
     <Slide transition={defaultTransition} bgColor={colors.black}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         stateful functional component
       </Text>
       <Image src={statefulCounter} style={{ objectFit: 'contain' }} />
       <Appear>
-        <Text textColor={colors.grey} textSize='1em' margin='30px'>
+        <Text textColor={colors.grey} textSize='2em' margin='30px'>
           <i>(no classes)</i>
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         e hooks vai MUITO além do estado...
       </Text>
       <Appear>
@@ -139,10 +151,10 @@ const Presentation = () => (
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.green}>
-      <Text textColor={colors.primary}>
+      <Text textColor={colors.primary} textSize='2em'>
         agora podemos usar as features do React em functional components!!!
       </Text>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         só isso, é sério.
       </Text>
     </Slide>
@@ -151,23 +163,25 @@ const Presentation = () => (
       transition={defaultTransition}
       bgColor={colors.pink}
     >
-      <Text textColor={colors.grey} textSize='1.5em'>e sim, existem motivos</Text>
+      <Text textColor={colors.grey} textSize='2em'>
+        e sim, existem motivos
+      </Text>
       <Appear>
         <div>
-          <Text margin='40px 0 0 0' textColor={colors.primary}>
+          <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.primary}>
             uma alternativa para os stateful components
           </Text>
-          <Text textSize='1em' textColor={colors.grey} margin='12px 0 0 0'>
+          <Text textSize='2em' textColor={colors.grey} margin='12px 0 0 0'>
             <i>atualmente só temos <strong>*classes*</strong></i>
           </Text>
         </div>
       </Appear>
       <Appear>
         <div>
-          <Text margin='40px 0 0 0' textColor={colors.primary}>
+          <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.primary}>
             simplificar a lógica de componentes complexos
           </Text>
-          <Text textSize='1em' textColor={colors.grey} margin='12px 0 0 0'>
+          <Text textSize='2em' textColor={colors.grey} margin='12px 0 0 0'>
             (confia)
           </Text>
         </div>
@@ -182,31 +196,31 @@ const Presentation = () => (
       </Text>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.blue}>
-      <Text textColor={colors.primary} textSize='1em' margin='30px'>
+      <Text textColor={colors.primary} textSize='2em' margin='30px'>
         coisas legais
       </Text>
       <Appear>
         <div>
-          <Text margin='40px 0 0 0' textColor={colors.primary}>
+          <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.primary}>
             simplifica padrões complexos como HOC’s e render props
           </Text>
-          <Text textSize='1em' textColor={colors.primary} margin='12px 0 0 0'>
+          <Text textSize='2em' textColor={colors.primary} margin='12px 0 0 0'>
             <i>hooks não criam “falsas hierarquias” na árvore</i>
           </Text>
         </div>
       </Appear>
       <Appear>
         <div>
-          <Text margin='40px 0 0 0' textColor={colors.primary}>
+          <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.primary}>
             flexibilidade
           </Text>
-          <Text textSize='1em' textColor={colors.primary} margin='12px 0 0 0'>
+          <Text textSize='2em' textColor={colors.primary} margin='12px 0 0 0'>
             <i>combinações</i>
           </Text>
         </div>
       </Appear>
       <Appear>
-        <Text margin='40px 0 0 0' textColor={colors.primary}>
+        <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.primary}>
           ciclos de vida modularizados
         </Text>
       </Appear>
@@ -217,49 +231,50 @@ const Presentation = () => (
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.grey}>
-      <Text textColor={colors.pink} textSize='1em' margin='30px'>
+      <Text textColor={colors.pink} textSize='2em' margin='30px'>
         coisas não legais :(
       </Text>
       <Appear>
-        <Text margin='40px 0 0 0' textColor={colors.pink}>
+        <Text textSize='2.5em' margin='40px 0 0 0' textColor={colors.pink}>
           sintaxe estranha no início
         </Text>
       </Appear>
       <Appear>
-        <Text textSize='1em' textColor={colors.pink} margin='18px 0 0 0'>
-          acostumem-se com o <i>use</i> que vai vir pra todo lado!
+        <Text textSize='2em' textColor={colors.pink} margin='18px 0 0 0'>
+          <i>acostumem-se com o use que vai vir pra todo lado!</i>
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.blue}>
-      <Text textColor={colors.grey} textSize='1em' margin='30px'>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
         basic hooks
       </Text>
       <Appear>
-        <Text textColor={colors.primary} margin='30px'>
-          useState (geral já sabe heheh)
+        <Text textSize='2.5em' textColor={colors.primary} margin='30px'>
+          useState
+          <div><i>(geral já sabe heheh)</i></div>
         </Text>
       </Appear>
       <Appear>
-        <Text textColor={colors.primary} margin='30px'>
+        <Text textSize='2.5em' textColor={colors.primary} margin='30px'>
           useEffect -> simplifica os métodos do ciclo de vida
         </Text>
       </Appear>
       <Appear>
-        <Text textColor={colors.primary} margin='30px'>
+        <Text textSize='2.5em' textColor={colors.primary} margin='30px'>
           useContext -> mais uma forma de usar Context (sem render props)
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition}>
-      <Text margin='30px' textSize='1.5em'>useEffect</Text>
+      <Text margin='30px' textSize='2em'>useEffect</Text>
       <Appear>
-        <Text fit textColor={colors.pink}>
+        <Text textSize='2em' textColor={colors.pink}>
           simplifica os métodos de ciclo de vida
         </Text>
       </Appear>
       <Appear>
-        <Text fit textColor={colors.pink} margin='32px'>
+        <Text textSize='2em' textColor={colors.pink} margin='32px'>
           componentDidMount + componentDidUpdate + componentWillMount
         </Text>
       </Appear>
@@ -273,16 +288,16 @@ const Presentation = () => (
       <Image src={statefulEffectCounter} style={{ objectFit: 'contain' }} />
     </Slide>
     <Slide transition={defaultTransition}>
-      <Text textColor={colors.black} textSize='1em' margin='30px'>
+      <Text textColor={colors.black} textSize='2em' margin='30px'>
         pontos muito interessantess
       </Text>
       <Appear>
-        <Text textColor={colors.pink} margin='30px'>
+        <Text textSize='2.5em' textColor={colors.pink} margin='30px'>
           controle dos métodos de ciclo de vida através do segundo parâmetro
         </Text>
       </Appear>
       <Appear>
-        <Text textColor={colors.pink}>
+        <Text textSize='2.5em' textColor={colors.pink}>
           <i><strong>modularização</strong></i> dos métodos de ciclo de vida
         </Text>
       </Appear>
@@ -291,11 +306,11 @@ const Presentation = () => (
       <Text textColor={colors.primary} fit>
         um dos pontos mais importantes sobre hooks:
       </Text>
-      <Text textColor={colors.primary} margin='40px'>
+      <Text textSize='2.5em' textColor={colors.primary} margin='40px'>
         podemos criar nossos próprios hooks!!
       </Text>
-      <Text textColor={colors.grey} textSize='1em'>
-        são os chamados <i>"custom hooks"</i>
+      <Text textColor={colors.grey} textSize='2em'>
+        são os chamados <i>'custom hooks'</i>
       </Text>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
@@ -309,63 +324,65 @@ const Presentation = () => (
       bgImage={thinkingBg}
     />
     <Slide transition={defaultTransition} bgColor={colors.blue}>
-      <Text textColor={colors.primary}>beleza mas... e as libs de manipulação de estado?</Text>
+      <Text textSize='2em' textColor={colors.primary}>
+        beleza mas... e as libs de manipulação de estado?
+      </Text>
       <Appear>
         <div>
-          <Text textSize='1em' textColor={colors.grey} margin='30px 0 0 0'>
+          <Text textSize='2.5em' textColor={colors.grey} margin='30px 0 0 0'>
             <i>demorei pra car$!@#$ pra aprender Redux e tu vem com essa?</i>
           </Text>
-          <Text textSize='1em' textColor={colors.grey} margin='40px 0 0 0'>
+          <Text textSize='2.5em' textColor={colors.grey} margin='40px 0 0 0'>
             <i>...mas mobx é tão daora</i>
           </Text>
         </div>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.green}>
-      <Text textColor={colors.primary}>cada caso é um caso, simples assim :)</Text>
+      <Text fit textColor={colors.primary}>
+        cada caso é um caso, simples assim :)
+      </Text>
       <Appear>
-        <Text textSize='1em' textColor={colors.grey} margin='12px 0 0 0'>
+        <Text textSize='2em' textColor={colors.grey} margin='30px 0 0 0'>
           <i>ninguém é obrigado a sair migrando tudo pra hooks</i>
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.pink}>
-      <Text textSize='1em' textColor={colors.grey}>importante ressaltar</Text>
+      <Text textSize='2em' textColor={colors.grey}>importante ressaltar</Text>
       <Appear>
-        <Text textSize='1.5em' textColor={colors.primary} margin='40px 0 0 0'>
+        <Text textSize='2.5em' textColor={colors.primary} margin='40px 0 0 0'>
           não refatorem o código inteiro para hooks (calma)
         </Text>
       </Appear>
       <Appear>
         <div>
-          <Text textSize='1.5em' textColor={colors.primary} margin='40px 0 0 0'>
+          <Text textSize='2.5em' textColor={colors.primary} margin='40px 0 0 0'>
             hooks são totalmente opcionais
           </Text>
-          <Text textSize='1.2em' textColor={colors.grey} margin='18px 0 0 0'>
+          <Text textSize='2em' textColor={colors.grey} margin='18px 0 0 0'>
             <i>no breaking changes</i>
           </Text>
         </div>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.blue}>
-      <Text textColor={colors.primary}>
+      <Text textSize='2.5em' textColor={colors.primary}>
         <strong>
           a comunidade simplesmente vem{' '}
-          <span style={{ color: colors.pink, backgroundColor: '#7cd3ff' }}> amando </span>
+          <span style={{ color: colors.pink, backgroundColor: '#7cd3ff' }}>amando</span>
           {' '}Hooks
         </strong>
       </Text>
       <Appear>
-        <Text textSize='1em' margin='40px' textColor={colors.primary}>
+        <Text textSize='2em' margin='40px' textColor={colors.primary}>
           então... usem e tirem suas próprias conclusões!
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.blue}>
-      <Text textColor={colors.primary}>
-        <strong>
-          e sim, estamos vivendo um período de grande transformaçào e evolução no React :)
-        </strong>
+      <Text textSize='2.5em' textColor={colors.primary}>
+        e sim, estamos vivendo um período de grande transformaçào e evolução no React :)
       </Text>
     </Slide>
     <Slide
@@ -375,7 +392,7 @@ const Presentation = () => (
       align='flex-end flex-end'
     >
       <Heading size={4} lineHeight={1} textColor={colors.primary} margin='0 0 40px 0'>
-        thanks {'<3'}
+        valeu demais {'<3'}
       </Heading>
     </Slide>
   </Deck>
