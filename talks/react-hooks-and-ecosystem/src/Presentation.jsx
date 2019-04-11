@@ -35,6 +35,10 @@ const reactInternalHooks = require('./assets/react-internal-hooks.png')
 const statefulEffectCounter = require('./assets/stateful-effect-counter.png')
 const useWindowSize = require('./assets/useWindowSize.png')
 const useWindowSizeExample = require('./assets/useWindowSizeExample.png')
+const componentDidMount = require('./assets/componentDidMount.png')
+const componentDidUpdate = require('./assets/componentDidUpdate.png')
+const componentWillUnmount = require('./assets/componentWillUnmount.png')
+const useReducer = require('./assets/useReducer.png')
 
 const defaultTransition = ['slide', 'fade']
 
@@ -101,7 +105,7 @@ const Presentation = () => (
         </div>
       </Appear>
     </Slide>
-    <Slide>
+    <Slide transition={defaultTransition}>
       <Text textSize='2em' margin='30px'>
         vamos pensar de forma simples...
       </Text>
@@ -133,12 +137,14 @@ const Presentation = () => (
     />
     <Slide transition={defaultTransition} bgColor={colors.black}>
       <Text textColor={colors.grey} textSize='2em' margin='30px'>
-        stateful functional component
+        stateful functional component...
       </Text>
-      <Image src={statefulCounter} style={{ objectFit: 'contain' }} />
       <Appear>
-        <Text textColor={colors.grey} textSize='2em' margin='30px'>
-          <i>(no classes)</i>
+        <Image src={statefulCounter} style={{ objectFit: 'contain' }} />
+      </Appear>
+      <Appear>
+        <Text textColor={colors.grey} fit margin='30px'>
+          <i>+ javascript - segredos (sem classes)</i>
         </Text>
       </Appear>
     </Slide>
@@ -274,27 +280,58 @@ const Presentation = () => (
         </Text>
       </Appear>
       <Appear>
-        <Text textSize='2em' textColor={colors.pink} margin='32px'>
-          componentDidMount + componentDidUpdate + componentWillMount
+        <Text textColor={colors.pink} margin="32px" fit>
+          um único hook, mais simplicidade
         </Text>
       </Appear>
       <Appear>
-        <Text fit textColor={colors.pink}>
-          um único hook, mais simplicidade
+        <Text textSize="2em" textColor={colors.pink} margin="12px 0 0 0" fit>
+          <i>"It’s all about the destination, not the journey"</i>
         </Text>
       </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
-      <Image src={statefulEffectCounter} style={{ objectFit: 'contain' }} />
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
+        componentDidMount
+      </Text>
+      <Appear>
+        <Image src={componentDidMount} style={{ objectFit: 'contain' }} />
+      </Appear>
+    </Slide>
+    <Slide transition={defaultTransition} bgColor={colors.black}>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
+        componentDidUpdate
+      </Text>
+      <Appear>
+        <Image src={componentDidUpdate} style={{ objectFit: 'contain' }} />
+      </Appear>
+      <Appear>
+        <Text textColor={colors.grey} fit margin='30px'>
+          <i>O segundo argumento é <strong>muito</strong> importante!!</i>
+        </Text>
+      </Appear>
+    </Slide>
+    <Slide transition={defaultTransition} bgColor={colors.black}>
+      <Text textColor={colors.grey} textSize='2em' margin='30px'>
+        componentWillUnmount
+      </Text>
+      <Appear>
+        <Image src={componentWillUnmount} style={{ objectFit: 'contain' }} />
+      </Appear>
     </Slide>
     <Slide transition={defaultTransition}>
       <Text textColor={colors.black} textSize='2em' margin='30px'>
         pontos muito interessantess
       </Text>
       <Appear>
-        <Text textSize='2.5em' textColor={colors.pink} margin='30px'>
-          controle dos métodos de ciclo de vida através do segundo parâmetro
-        </Text>
+        <div>
+          <Text textSize='2.5em' textColor={colors.pink}>
+            controle dos métodos de ciclo de vida através do segundo parâmetro
+          </Text>
+          <Text textSize='1.5em' margin='12px 0 30px 0' textColor={colors.pink}>
+            sem aquele monte de <i>if</i> maluco dentro do <i>componentDidUpdate</i>
+          </Text>
+        </div>
       </Appear>
       <Appear>
         <Text textSize='2.5em' textColor={colors.pink}>
@@ -313,11 +350,27 @@ const Presentation = () => (
         são os chamados <i>'custom hooks'</i>
       </Text>
     </Slide>
+    <Slide transition={defaultTransition}>
+      <Text textColor={colors.pink} textSize='2em'>
+        beleza então bora sapecar nosso hook na parada!!
+      </Text>
+    </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
       <Image src={useWindowSize} style={{ objectFit: 'contain', maxHeight: '80vh' }} />
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.black}>
       <Image src={useWindowSizeExample} style={{ objectFit: 'contain', maxHeight: '80vh' }} />
+    </Slide>
+    <Slide transition={defaultTransition} bgColor={colors.blue}>
+      <Text margin='30px' textSize='3em' textColor={colors.primary}>
+        useReducer!!
+      </Text>
+      <Text margin='30px' textSize='2em' textColor={colors.primary}>
+        <i>o bagulho ta ficando louco</i>
+      </Text>
+    </Slide>
+    <Slide transition={defaultTransition} bgColor={colors.black}>
+      <Image src={useReducer} style={{ objectFit: 'contain', maxHeight: '80vh' }} />
     </Slide>
     <Slide
       transition={defaultTransition}
