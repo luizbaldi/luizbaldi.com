@@ -1,6 +1,6 @@
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
-const getRandomValues = () => {
+export const getRandomValues = () => {
   const { backgroundColor, particlesColor } = randomGenerator.colors()
   const particlesValue = randomGenerator.particlesValue()
   const sizeValue = randomGenerator.sizeValue()
@@ -8,7 +8,7 @@ const getRandomValues = () => {
   return { backgroundColor, particlesColor, particlesValue, sizeValue }
 }
 
-const randomGenerator = {
+export const randomGenerator = {
   particlesValue() {
     return getRandomInt(30, 80)
   },
@@ -44,4 +44,3 @@ const randomGenerator = {
     return getRandomInt(2, 8)
   }
 }
-

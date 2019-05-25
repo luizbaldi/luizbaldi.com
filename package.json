@@ -4,7 +4,8 @@
   "description": "Personal homepage website",
   "main": "index.js",
   "scripts": {
-    "build": "gulp"
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,7 @@
   },
   "homepage": "https://github.com/luizbaldi/luizbaldi.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-if": "^2.0.2",
-    "gulp-useref": "^3.1.4"
+    "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
     "particles.js": "^2.0.0",
