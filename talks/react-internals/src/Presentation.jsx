@@ -79,7 +79,7 @@ const Presentation = () => (
       </Appear>
       <Appear>
         <Text textColor={colors.grey} padding='12' textSize='1.5em'>
-          também curto umas breja e um lofizin
+          também curto umas breja e um lo-fi
         </Text>
       </Appear>
       <Appear>
@@ -242,7 +242,7 @@ const Presentation = () => (
       </Appear>
       <Appear>
         <Text textColor={colors.darkBlue} padding='30' textSize="2em">
-          o <Code>diffing</Code> em listas é performado através do prop <Code>key</Code>
+          o <Code>diffing</Code> em listas é performado através da prop <Code>key</Code>
         </Text>
       </Appear>
     </Slide>
@@ -360,7 +360,7 @@ const Presentation = () => (
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.darkBlue}>
       <Text textColor={colors.pink} padding='20' textSize='2em'>
-        o legal é que o conceito de “virtual dom” se aplica a váarios cenários
+        o legal é que o conceito de “virtual dom” se aplica a vários cenários
       </Text>
       <Appear>
         <Text textColor={colors.pink} padding='20' textSize='1.5em'>
@@ -467,7 +467,7 @@ const Presentation = () => (
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.pink}>
       <Text textColor={colors.pearl} padding='20' textSize='2em'>
-        pra vocês terem idéia, esses são algumas formas de utilizar o react hoje
+        pra vocês terem ideia, esses são algumas formas de utilizar o react hoje
       </Text>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.darkBlue}>
@@ -494,7 +494,7 @@ const Presentation = () => (
       </Code>
       <Image
         src={reactPdf}
-        style={{ objectFit: 'contain', borderRadius: 8, marginTop: 30 }}
+        style={{ objectFit: 'contain', borderRadius: 8, marginTop: 30, width: '70%' }}
       />
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.darkBlue}>
@@ -517,7 +517,7 @@ const Presentation = () => (
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.darkBlue}>
       <Text textColor={colors.pearl} padding='20' textSize='1.5em'>
-        e react na p*** toda basicamente
+        react na p*** toda basicamente
       </Text>
     </Slide>
     <Slide
