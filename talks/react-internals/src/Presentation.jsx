@@ -87,6 +87,11 @@ const Presentation = () => (
           <i>remote at @Divisio</i>
         </Text>
       </Appear>
+      <Appear>
+        <Text textColor={colors.grey} padding='22' textSize='1.5em'>
+          <i>@baldilp</i>
+        </Text>
+      </Appear>
     </Slide>
     <Slide transition={defaultTransition} bgColor={colors.indigo}>
       <Text textColor={colors.white} padding='20' textSize='2em'>

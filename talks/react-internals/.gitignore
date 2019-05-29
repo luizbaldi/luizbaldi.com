@@ -75,4 +75,3 @@ typings/
 # Dist
 dist
 .cache
-build
