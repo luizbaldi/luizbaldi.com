@@ -21,12 +21,12 @@ import {
 } from 'spectacle'
 
 /* gifs */
-const narutoBg = 'https://media.giphy.com/media/ohT97gdpR40vK/giphy.gif'
-const finalBg = 'https://media.giphy.com/media/7DzlajZNY5D0I/giphy.gif'
-const mindBlowing = 'https://media.giphy.com/media/EldfH1VJdbrwY/giphy.gif'
-const plotting = 'https://media.giphy.com/media/LXHJRRjnviw7e/giphy.gif'
-const conductor = 'https://media.giphy.com/media/xdHQKyzEUR2yA/giphy.gif'
-const universe = 'https://media.giphy.com/media/3og0IFrHkIglEOg8Ba/giphy.gif'
+import narutoBg from './assets/narutoBg.gif';
+import finalBg from './assets/finalBg.gif';
+import mindBlowing from './assets/mindBlowing.gif';
+import plotting from './assets/plotting.gif';
+import conductor from './assets/conductor.gif';
+import universe from './assets/universe.gif';
 
 /* internal images */
 const reactFiber = require('./assets/react-fiber.png')
