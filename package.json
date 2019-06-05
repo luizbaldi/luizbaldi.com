@@ -4,7 +4,7 @@
   "description": "Personal homepage website",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html -d build",
     "dev": "parcel src/index.html"
   },
   "repository": {
