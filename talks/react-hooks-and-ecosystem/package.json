@@ -12,10 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "spectacle": "^5.4.0",
-    "styled-components": "^3.4.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "spectacle": "^5.5.0",
+    "styled-components": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
