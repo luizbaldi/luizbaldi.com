@@ -11,7 +11,7 @@
 }
 
 * {
-  font-family: 'Droid Sans', monospace;
+  font-family: monospace, 'Droid Sans';
   margin: 0;
   overflow: hidden;
 }
@@ -75,8 +75,8 @@ header {
 }
 
 .panel .footer .contact .images img {
-  width: 34px;
-  margin: 8px 4px;
+  width: 40px;
+  margin: 8px;
 }
 
 .panel .footer .message {
