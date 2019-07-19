@@ -51,6 +51,7 @@ header {
 .panel .title > p {
   font-size: 0.8em;
   padding-top: 20px;
+  line-height: 22px;
 }
 
 .panel .title :last-child {
