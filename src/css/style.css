@@ -68,6 +68,14 @@ header {
   font-size: 0.8em;
 }
 
+.panel .footer > span {
+  display: block;
+  opacity: .7;
+  font-size: small;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
 .panel .footer .contact .images {
   flex-direction: row;
   display: flex;
@@ -100,6 +108,10 @@ header {
 
 .panel .footer .message .typed > p {
   margin-top: 4px;
+}
+
+.divider {
+  opacity: .7;
 }
 
 #randomize {
