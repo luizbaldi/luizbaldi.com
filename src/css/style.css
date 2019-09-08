@@ -13,7 +13,6 @@
 * {
   font-family: monospace, 'Droid Sans';
   margin: 0;
-  overflow: hidden;
 }
 
 #particles {
@@ -23,29 +22,22 @@
   background-position: 50% 50%;
 }
 
+.background {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .panel {
   background-color: #0b0b0c87;
   color: #fafafa;
   font-size: 1.2em;
-  position: absolute;
-  width: 30%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 70%;
   padding: 40px;
   border-radius: 4px;
   z-index: 1;
   max-width: 440px;
-}
-
-header {
-  padding-top: 24px;
-  text-align: center;
-  z-index: 1;
-  color: #fafafa;
-  font-size: 1.4em;
-  position: relative;
-
 }
 
 .panel .title > p {
@@ -110,6 +102,55 @@ header {
   margin-top: 4px;
 }
 
+.panel .talks-label {
+  padding: 14px;
+  text-align: center;
+}
+
+.panel .talks-label > span {
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.panel.talks {
+  display: none;
+  opacity: 0;
+  max-width: 640px;
+  max-height: 440px;
+  overflow: auto;
+}
+
+.panel.talks p:first-of-type {
+  padding-top: 0px;
+}
+
+.panel.talks .talk-item {
+  padding: 12px 0;
+}
+
+.panel.talks .talk-item > i {
+  display: block;
+  font-size: 0.8em;
+  color: #ffffffb3;
+}
+
+.panel.talks .back-arrow {
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 0.8em;
+  display: block;
+  padding-top: 20px;
+  border-top: 1px solid #ffffffb3;
+  margin-top: 12px;
+  transition: color .2s ease-in;
+}
+
+.panel.talks .back-arrow:hover {
+  color: #ffffffb3;
+  border-top: 1px solid #ffffffb3;
+}
+
 .divider {
   opacity: .7;
 }
@@ -132,6 +173,10 @@ header {
 
 @media (max-width: 768px) {
   .panel {
+    width: 70%;
+  }
+
+  .panel.talks {
     width: 70%;
   }
 }

@@ -25,6 +25,7 @@
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
+    "gsap": "^2.1.3",
     "particles.js": "^2.0.0",
     "typed.js": "^2.0.8"
   }
