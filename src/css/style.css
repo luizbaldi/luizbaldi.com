@@ -135,6 +135,10 @@
   color: #ffffffb3;
 }
 
+.panel.talks .talk-item > a {
+  color: #fafafa;
+}
+
 .panel.talks .back-arrow {
   cursor: pointer;
   font-weight: lighter;
