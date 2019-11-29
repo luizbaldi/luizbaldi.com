@@ -1,11 +1,7 @@
-import 'particles.js'
+import App from '../App.svelte'
 
-import { init as initParticles } from './particles'
-import { init as initTyped } from './typed'
-import startAnimationListeners from './animation'
+const app = new App({
+  target: document.getElementById('svelte-root')
+})
 
-window.onload = () => {
-  initParticles()
-  initTyped()
-  startAnimationListeners()
-}
+export default app
