@@ -4,20 +4,20 @@ const { buildASTSchema } = require('graphql')
 const schema = buildASTSchema(gql`
   type Music {
     id: ID,
-    name: String,
+    title: String,
     artist: String,
     duration: Int
   }
 
   type Query {
-    musics: [Music],
+    allMusics: [Music],
     music(id: ID!): Music
   }
 
   type Mutation {
     addMusic(
       id: ID!,
-      name: String!,
+      title: String!,
       artist: String!,
       duration: Int
     ): Music

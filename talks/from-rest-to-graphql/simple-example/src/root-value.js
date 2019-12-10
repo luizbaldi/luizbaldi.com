@@ -1,7 +1,7 @@
 const musics = require('./datasources/musics')
 
 const rootValue = {
-  musics: () => new Promise(resolve => {
+  allMusics: () => new Promise((resolve) => {
     setTimeout(() => {
       resolve(musics)
     }, 4000);
