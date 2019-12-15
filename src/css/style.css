@@ -64,7 +64,7 @@
   display: block;
   opacity: .7;
   font-size: small;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   text-align: center;
 }
 
@@ -73,6 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: wrap;
 }
 
 .panel .footer .contact .images img {
