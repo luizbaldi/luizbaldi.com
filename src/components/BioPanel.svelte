@@ -1,13 +1,13 @@
 <script>
-  import githubIcon from '../img/github.png'
-  import linkedinIcon from '../img/linkedin.png'
-  import twitterIcon from '../img/twitter.png'
-  import youtubeIcon from '../img/youtube.png'
-  import instagramIcon from '../img/instagram.png'
-  import spotifyIcon from '../img/spotify.png'
-  import soundcloudIcon from '../img/soundcloud.png'
+  import githubIcon from "../img/github.png";
+  import linkedinIcon from "../img/linkedin.png";
+  import twitterIcon from "../img/twitter.png";
+  import youtubeIcon from "../img/youtube.png";
+  import instagramIcon from "../img/instagram.png";
+  import spotifyIcon from "../img/spotify.png";
+  import soundcloudIcon from "../img/soundcloud.png";
 
-  import Divider from './Divider.svelte'
+  import Divider from "./Divider.svelte";
 </script>
 
 <style>
@@ -20,6 +20,17 @@
     border-radius: 4px;
     z-index: 1;
     max-width: 440px;
+  }
+
+  .panel .talks-label {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .panel .talks-label > span {
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fafafa;
   }
 
   .panel .title > p {
@@ -44,7 +55,7 @@
 
   .panel .footer > span {
     display: block;
-    opacity: .7;
+    opacity: 0.7;
     font-size: small;
     margin-bottom: 4px;
     text-align: center;
@@ -83,6 +94,12 @@
   .panel .footer .message .typed > p {
     margin-top: 4px;
   }
+
+  @media (max-width: 768px) {
+    .panel {
+      width: 70%;
+    }
+  }
 </style>
 
 <div class="panel" id="bio">
@@ -92,33 +109,35 @@
     <Divider />
   </div>
   <p class="subtitle">
-    also, frontend engineer,
-    React and React Native specialist, building web and mobile solutions.
+    also, frontend engineer, React and React Native specialist, building web and
+    mobile solutions.
   </p>
   <footer class="footer">
     <span>you can find me at:</span>
     <div class="contact">
       <div class="images">
         <a href="https://github.com/luizbaldi" target="_blank">
-          <img src={githubIcon} alt="Github icon">
+          <img src={githubIcon} alt="Github icon" />
         </a>
         <a href="https://br.linkedin.com/in/luizbaldi" target="_blank">
-          <img src={linkedinIcon} alt="Linkedin icon">
+          <img src={linkedinIcon} alt="Linkedin icon" />
         </a>
         <a href="https://twitter.com/baldilp" target="_blank">
-          <img src={twitterIcon} alt="Twitter icon">
+          <img src={twitterIcon} alt="Twitter icon" />
         </a>
         <a href="https://www.youtube.com/user/lpBaldi" target="_blank">
-          <img src={youtubeIcon} alt="Youtube icon">
+          <img src={youtubeIcon} alt="Youtube icon" />
         </a>
         <a href="https://www.instagram.com/baldilp" target="_blank">
-          <img src={instagramIcon} alt="Instagram icon">
+          <img src={instagramIcon} alt="Instagram icon" />
         </a>
-        <a href="https://open.spotify.com/user/luizbaldi?si=rGNGJOgnRhqyaR2THj_XjQ" target="_blank">
-          <img src={spotifyIcon} alt="Spotify icon">
+        <a
+          href="https://open.spotify.com/user/luizbaldi?si=rGNGJOgnRhqyaR2THj_XjQ"
+          target="_blank">
+          <img src={spotifyIcon} alt="Spotify icon" />
         </a>
         <a href="https://soundcloud.com/luizbaldi" target="_blank">
-          <img src={soundcloudIcon} alt="SoundCloud icon">
+          <img src={soundcloudIcon} alt="SoundCloud icon" />
         </a>
       </div>
     </div>
@@ -126,7 +145,7 @@
       <span>talks</span>
     </div>
     <div class="message">
-      <span class="typed"></span>
+      <span class="typed" />
     </div>
   </footer>
 </div>

@@ -1,79 +1,16 @@
 @font-face {
-  font-family: 'Droid Sans';
-  src: url('../fonts/DroidSans.eot');
-  src: url('../fonts/DroidSans.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/DroidSans.woff2') format('woff2'),
-      url('../fonts/DroidSans.woff') format('woff'),
-      url('../fonts/DroidSans.ttf') format('truetype'),
-      url('../fonts/DroidSans.svg#DroidSans') format('svg');
+  font-family: "Droid Sans";
+  src: url("../fonts/DroidSans.eot");
+  src: url("../fonts/DroidSans.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DroidSans.woff2") format("woff2"),
+    url("../fonts/DroidSans.woff") format("woff"),
+    url("../fonts/DroidSans.ttf") format("truetype"),
+    url("../fonts/DroidSans.svg#DroidSans") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: monospace, 'Droid Sans';
+  font-family: monospace, "Droid Sans";
   margin: 0;
-}
-
-.panel .talks-label {
-  padding: 14px;
-  text-align: center;
-}
-
-.panel .talks-label > span {
-  cursor: pointer;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #fafafa;
-}
-
-.panel.talks {
-  display: none;
-  opacity: 0;
-  max-width: 640px;
-  max-height: 440px;
-  overflow: auto;
-}
-
-.panel.talks p:first-of-type {
-  padding-top: 0px;
-}
-
-.panel.talks .talk-item {
-  padding: 12px 0;
-}
-
-.panel.talks .talk-item > i {
-  display: block;
-  font-size: 0.8em;
-  color: #ffffffb3;
-}
-
-.panel.talks .talk-item > a {
-  color: #fafafa;
-}
-
-.panel.talks .back-arrow {
-  cursor: pointer;
-  font-weight: lighter;
-  font-size: 0.8em;
-  display: block;
-  padding-top: 20px;
-  border-top: 1px solid #ffffffb3;
-  margin-top: 12px;
-  transition: color .2s ease-in;
-}
-
-.panel.talks .back-arrow:hover {
-  color: #ffffffb3;
-  border-top: 1px solid #ffffffb3;
-}
-
-@media (max-width: 768px) {
-  .panel {
-    width: 70%;
-  }
-
-  .panel.talks {
-    width: 70%;
-  }
 }

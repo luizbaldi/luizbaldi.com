@@ -1,19 +1,20 @@
 <script>
-  import 'particles.js'
-  import { onMount } from 'svelte'
+  import "particles.js";
+  import { onMount } from "svelte";
 
-  import { init as initParticles } from './js/particles'
-  import { init as initTyped } from './js/typed'
-  import startAnimationListeners from './js/animation'
+  import { init as initParticles } from "./js/particles";
+  import { init as initTyped } from "./js/typed";
+  import startAnimationListeners from "./js/animation";
 
-  import Particles from './components/Particles.svelte'
-  import BioPanel from './components/BioPanel.svelte'
+  import Particles from "./components/Particles.svelte";
+  import BioPanel from "./components/BioPanel.svelte";
+  import TalksPanel from "./components/TalksPanel.svelte";
 
   onMount(() => {
-    initParticles()
-    initTyped()
-    // startAnimationListeners()
-  })
+    initParticles();
+    initTyped();
+    startAnimationListeners();
+  });
 </script>
 
 <style>
@@ -28,4 +29,5 @@
 <div class="background">
   <Particles />
   <BioPanel />
+  <TalksPanel />
 </div>
