@@ -65,6 +65,12 @@
 
 <div class="panel talks" id="talks">
   <p class="talk-item">
+    <a href="https://slides.com/luizbaldi/from-rest-to-graphql" target="_blank">
+      From REST to GraphQL
+    </a>
+    <i>@ The Dev Tek - Dec/2019</i>
+  </p>
+  <p class="talk-item">
     <a href="http://luizbaldi.com/talks/react-internals/" target="_blank">
       React Internals - React Fiber and custom renderers
     </a>

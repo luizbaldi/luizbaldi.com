@@ -57,7 +57,7 @@
     display: block;
     opacity: 0.7;
     font-size: small;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     text-align: center;
   }
 
@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: wrap;
   }
 
   .panel .footer .contact .images img {
@@ -106,7 +107,7 @@
   <strong>hi, i'm baldi :)</strong>
   <div class="title">
     <p>calm songs, coffe, code and simplicity.</p>
-    <Divider />
+    <p class="divider">~</p>
   </div>
   <p class="subtitle">
     also, frontend engineer, React and React Native specialist, building web and
