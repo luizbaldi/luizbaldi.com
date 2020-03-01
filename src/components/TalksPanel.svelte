@@ -1,3 +1,17 @@
+<script>
+  import TweenMax from "gsap/TweenMax";
+
+  import { visibleProps, invisibleProps } from "../js/gsap-utils.js";
+
+  function openBioPanel() {
+    TweenMax.to("#talks", 0.8, invisibleProps);
+
+    setTimeout(() => {
+      TweenMax.to("#bio", 1, visibleProps);
+    }, 800);
+  }
+</script>
+
 <style>
   .panel {
     background-color: #0b0b0c87;
@@ -44,6 +58,7 @@
     padding-top: 20px;
     border-top: 1px solid #ffffffb3;
     margin-top: 12px;
+    margin-bottom: 32px;
     transition: color 0.2s ease-in;
   }
 
@@ -120,5 +135,7 @@
     A React Native land tour
     <i>@ Meetup Front end BH - Jun/2018</i>
   </p>
-  <span class="back-arrow" id="talks-back">&#60;~ back</span>
+  <span class="back-arrow" id="talks-back" on:click={openBioPanel}>
+    &#60;~ back
+  </span>
 </div>

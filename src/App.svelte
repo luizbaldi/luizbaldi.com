@@ -4,7 +4,6 @@
 
   import { init as initParticles } from "./js/particles";
   import { init as initTyped } from "./js/typed";
-  import startAnimationListeners from "./js/animation";
 
   import Particles from "./components/Particles.svelte";
   import BioPanel from "./components/BioPanel.svelte";
@@ -13,7 +12,6 @@
   onMount(() => {
     initParticles();
     initTyped();
-    startAnimationListeners();
   });
 </script>
 

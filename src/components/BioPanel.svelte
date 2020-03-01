@@ -1,4 +1,6 @@
 <script>
+  import TweenMax from "gsap/TweenMax";
+
   import githubIcon from "../img/github.png";
   import linkedinIcon from "../img/linkedin.png";
   import twitterIcon from "../img/twitter.png";
@@ -8,6 +10,16 @@
   import soundcloudIcon from "../img/soundcloud.png";
 
   import Divider from "./Divider.svelte";
+
+  import { visibleProps, invisibleProps } from "../js/gsap-utils.js";
+
+  function openTalksPanel() {
+    TweenMax.to("#bio", 0.8, invisibleProps);
+
+    setTimeout(() => {
+      TweenMax.to("#talks", 1, visibleProps);
+    }, 800);
+  }
 </script>
 
 <style>
@@ -100,6 +112,10 @@
     .panel {
       width: 70%;
     }
+
+    .panel .footer .message {
+      display: none;
+    }
   }
 </style>
 
@@ -142,7 +158,7 @@
         </a>
       </div>
     </div>
-    <div class="talks-label" id="talks-link">
+    <div class="talks-label" id="talks-link" on:click={openTalksPanel}>
       <span>talks</span>
     </div>
     <div class="message">
