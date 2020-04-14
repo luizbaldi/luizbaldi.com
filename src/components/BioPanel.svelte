@@ -39,10 +39,15 @@
     text-align: center;
   }
 
-  .panel .talks-label > span {
+  .panel .talks-label .underlined {
     cursor: pointer;
     padding-bottom: 2px;
     border-bottom: 1px solid #fafafa;
+  }
+
+  .panel .talks-label a {
+    text-decoration: none;
+    color: #fafafa;
   }
 
   .panel .title > p {
@@ -120,9 +125,11 @@
 </style>
 
 <div class="panel" id="bio">
-  <strong>hi, i'm baldi :)</strong>
+  <strong>hi, i'm luiz baldi :)</strong>
   <div class="title">
-    <p>calm songs, coffe, code and simplicity.</p>
+    <p>
+      <i>calm songs, coffe, beer and code.</i>
+    </p>
     <p class="divider">~</p>
   </div>
   <p class="subtitle">
@@ -158,8 +165,15 @@
         </a>
       </div>
     </div>
-    <div class="talks-label" id="talks-link" on:click={openTalksPanel}>
-      <span>talks</span>
+    <div class="talks-label" on:click={openTalksPanel}>
+      <span id="talks-link" class="underlined">talks</span>
+    </div>
+    <div class="talks-label">
+      <span class="underlined">
+        <a href="https://www.verypossible.com/team/luiz-baldi" target="__blank">
+          <i>more professional bio</i>
+        </a>
+      </span>
     </div>
     <div class="message">
       <span class="typed" />
