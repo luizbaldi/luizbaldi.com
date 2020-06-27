@@ -170,7 +170,9 @@
     </div>
     <div class="talks-label">
       <span class="underlined">
-        <a href="https://www.verypossible.com/team/luiz-baldi" target="__blank">
+        <a
+          href="https://www.verypossible.com/people/luiz-baldi"
+          target="__blank">
           <i>more professional bio</i>
         </a>
       </span>
