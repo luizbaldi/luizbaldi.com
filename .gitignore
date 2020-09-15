@@ -64,6 +64,6 @@ typings/
 src/.DS_Store
 src/img/.DS_Store
 
-.cache
-
 dist
+build
+.cache
