@@ -2,10 +2,8 @@
   import TweenMax from "gsap/TweenMax";
 
   import githubIcon from "../img/github.png";
-  import linkedinIcon from "../img/linkedin.png";
   import twitterIcon from "../img/twitter.png";
   import youtubeIcon from "../img/youtube.png";
-  import instagramIcon from "../img/instagram.png";
   import spotifyIcon from "../img/spotify.png";
   import soundcloudIcon from "../img/soundcloud.png";
 
@@ -143,17 +141,11 @@
         <a href="https://github.com/luizbaldi" target="_blank">
           <img src={githubIcon} alt="Github icon" />
         </a>
-        <a href="https://br.linkedin.com/in/luizbaldi" target="_blank">
-          <img src={linkedinIcon} alt="Linkedin icon" />
-        </a>
         <a href="https://twitter.com/baldilp" target="_blank">
           <img src={twitterIcon} alt="Twitter icon" />
         </a>
         <a href="https://www.youtube.com/user/lpBaldi" target="_blank">
           <img src={youtubeIcon} alt="Youtube icon" />
-        </a>
-        <a href="https://www.instagram.com/baldilp" target="_blank">
-          <img src={instagramIcon} alt="Instagram icon" />
         </a>
         <a
           href="https://open.spotify.com/user/luizbaldi?si=rGNGJOgnRhqyaR2THj_XjQ"
