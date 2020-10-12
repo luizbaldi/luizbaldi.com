@@ -123,16 +123,16 @@
 </style>
 
 <div class="panel" id="bio">
-  <strong>hi, i'm luiz baldi :)</strong>
+  <strong>hi, i'm luiz baldi</strong>
   <div class="title">
     <p>
-      <i>calm songs, coffe, beer and code.</i>
+      <i>I like calm songs, walks, coffe, beer, and code.</i>
     </p>
     <p class="divider">~</p>
   </div>
   <p class="subtitle">
-    also, frontend engineer, React and React Native specialist, building web and
-    mobile solutions.
+    also, software engineer, React and React Native specialist, building web and
+    mobile solutions with JavaScript and Elixir ~
   </p>
   <footer class="footer">
     <span>you can find me at:</span>
@@ -165,7 +165,7 @@
         <a
           href="https://www.verypossible.com/people/luiz-baldi"
           target="__blank">
-          <i>more professional bio</i>
+          <i>professional bio</i>
         </a>
       </span>
     </div>
