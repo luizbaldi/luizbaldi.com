@@ -126,7 +126,7 @@
   <strong>hi, i'm luiz baldi</strong>
   <div class="title">
     <p>
-      <i>I like calm songs, walks, coffe, beer, and code.</i>
+      <i>I like calm songs, walks, coffee, beer, and code.</i>
     </p>
     <p class="divider">~</p>
   </div>
