@@ -67,3 +67,4 @@ src/img/.DS_Store
 dist
 build
 .cache
+.next

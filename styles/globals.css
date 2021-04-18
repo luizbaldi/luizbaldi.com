@@ -1,0 +1,17 @@
+:root {
+  --dark-brown: #30292f;
+  --grey: #3f4045;
+  --light-grey: #413f54;
+  --blue: #355691;
+  --violet: #5f5aa2;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-grey);
+}
+
+main {
+  padding: 1.5em;
+}
