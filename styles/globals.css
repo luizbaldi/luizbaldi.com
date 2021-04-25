@@ -4,14 +4,33 @@
   --light-grey: #413f54;
   --blue: #355691;
   --violet: #5f5aa2;
+  --white: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--light-grey);
+  background-color: #000;
+  color: var(--white);
 }
 
-main {
+.container {
+  height: 100vh;
+  width: 100vw;
   padding: 1.5em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:visited {
+  color: var(--white);
 }

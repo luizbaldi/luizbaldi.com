@@ -1,0 +1,18 @@
+.container {
+  text-align: left;
+  padding: 0 2em;
+}
+
+.divider {
+  margin: 2em 0;
+  height: 1px;
+  background-color: var(--violet);
+}
+
+.title {
+  margin-top: 2em;
+}
+
+.content {
+  line-height: 24px;
+}

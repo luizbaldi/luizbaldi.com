@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  flex: 1;
+  border-radius: 6px;
+  height: 100%;
+  background-color: var(--light-grey);
+  max-width: calc(100vw - 4em);
+}
+
+.particlesContainer {
+  flex: 1;
+  background-color: var(--dark-brown);
+  border-radius: 6px;
+}
+
+.particles {
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .particlesContainer {
+    display: none;
+  }
+}

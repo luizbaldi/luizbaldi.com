@@ -1,0 +1,13 @@
+.talkItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.talkItem a {
+  color: var(--white);
+}
+
+.talkItem i {
+  font-size: 0.8em;
+}

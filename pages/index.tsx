@@ -1,7 +1,31 @@
+import { useState } from "react";
+import { Pages } from "types";
 import Head from "next/head";
-import Header from "@components/Header";
+
+import Menu from "@components/Menu";
+import Box from "@components/Box";
+import GoBack from "@components/GoBack";
+import TalksSection from "@components/TalksSection";
+import AboutSection from "@components/AboutSection";
 
 function Home() {
+  const [currentPage, setCurrentPage] = useState<Pages>("menu");
+
+  const renderContent = () => {
+    switch (currentPage) {
+      case "about":
+        return <AboutSection />;
+      case "talks":
+        return <TalksSection />;
+      default:
+        return <Menu setCurrentPage={setCurrentPage} />;
+    }
+  };
+
+  const resetNavigation = () => {
+    setCurrentPage("menu");
+  };
+
   return (
     <>
       <Head>
@@ -14,9 +38,14 @@ function Home() {
         />
       </Head>
 
-      <main>
-        <Header title="Luiz Baldi" />
-        <p className="description">~</p>
+      <main className="container">
+        <Box>
+          <GoBack
+            isVisible={currentPage !== "menu"}
+            resetNavigation={resetNavigation}
+          />
+          {renderContent()}
+        </Box>
       </main>
     </>
   );

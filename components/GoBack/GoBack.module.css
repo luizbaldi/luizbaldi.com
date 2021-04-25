@@ -1,0 +1,16 @@
+.container {
+  cursor: pointer;
+  text-align: left;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin-left: 2em;
+}
+
+.container img {
+  height: 14px;
+  width: 14px;
+  transform: rotate(180deg);
+  margin-right: 4px;
+}
