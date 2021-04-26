@@ -14,3 +14,9 @@
   transform: rotate(180deg);
   margin-right: 4px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 2em;
+  }
+}

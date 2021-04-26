@@ -6,9 +6,8 @@ const AboutSection = () => {
       Hi 👋
       <p>
         I'm a Software engineer focused on JavaScript and Elixir and specialized
-        in React and React Native, where I'm usually building custom solutions
-        for web and mobile platforms, most of the time doing frontend
-        development.
+        in React and React Native, where I usually build custom solutions for
+        web and mobile platforms, most of the time doing frontend development.
       </p>
       <p>
         Also a board member of a brazilian podcast called{" "}
