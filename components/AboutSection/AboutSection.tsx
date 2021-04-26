@@ -5,12 +5,13 @@ const AboutSection = () => {
     <Section title="About">
       Hi 👋
       <p>
-        I'm a Software engineer focused on JavaScript and Elixir and specialized
-        in React and React Native, where I usually build custom solutions for
-        web and mobile platforms, most of the time doing frontend development.
+        As a Software engineer focused on JavaScript and Elixir and specialized
+        in React and React Native, I usually build custom solutions for web and
+        mobile platforms. I spend most of the time doing frontend development,
+        architecting solutions, and experimenting with animations.
       </p>
       <p>
-        Also a board member of a brazilian podcast called{" "}
+        I'm also a board member of a brazilian podcast called{" "}
         <a href="https://devdevs.org" target="_blank">
           DevDevs
         </a>

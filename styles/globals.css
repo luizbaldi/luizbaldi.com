@@ -31,6 +31,7 @@ body {
   justify-content: center;
 }
 
+a,
 a:visited {
   color: var(--white);
 }
