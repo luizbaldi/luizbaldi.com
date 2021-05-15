@@ -11,19 +11,10 @@ import AboutSection from "@components/AboutSection";
 function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("menu");
 
-  const renderContent = () => {
-    switch (currentPage) {
-      case "about":
-        return <AboutSection />;
-      case "talks":
-        return <TalksSection />;
-      default:
-        return <Menu setCurrentPage={setCurrentPage} />;
-    }
-  };
-
-  const resetNavigation = () => {
-    setCurrentPage("menu");
+  const pages = {
+    menu: <Menu setCurrentPage={setCurrentPage} />,
+    about: <AboutSection />,
+    talks: <TalksSection />,
   };
 
   return (
@@ -42,9 +33,9 @@ function Home() {
         <Box>
           <GoBack
             isVisible={currentPage !== "menu"}
-            resetNavigation={resetNavigation}
+            resetNavigation={() => setCurrentPage("menu")}
           />
-          {renderContent()}
+          {pages[currentPage]}
         </Box>
       </main>
     </>
