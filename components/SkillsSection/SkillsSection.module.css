@@ -1,0 +1,37 @@
+.skillBox {
+  height: 48px;
+  width: 160px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4px;
+  font-size: 0.9em;
+}
+
+.levelContainer {
+  display: flex;
+  width: 100%;
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+.levelContainer span {
+  height: 4px;
+  flex: 1;
+  margin: 0 2px;
+  border-radius: 6px;
+}
+
+.skillBoxContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.title {
+  margin-top: 1.5em;
+}

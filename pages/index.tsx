@@ -7,6 +7,7 @@ import Box from "@components/Box";
 import GoBack from "@components/GoBack";
 import TalksSection from "@components/TalksSection";
 import AboutSection from "@components/AboutSection";
+import SkillsSection from "@components/SkillsSection";
 
 function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("menu");
@@ -15,6 +16,7 @@ function Home() {
     menu: <Menu setCurrentPage={setCurrentPage} />,
     about: <AboutSection />,
     talks: <TalksSection />,
+    skills: <SkillsSection />,
   };
 
   return (

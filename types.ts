@@ -1,1 +1,1 @@
-export type Pages = "menu" | "about" | "talks";
+export type Pages = "menu" | "about" | "talks" | "skills";

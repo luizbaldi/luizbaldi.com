@@ -12,6 +12,8 @@ const Menu = ({ setCurrentPage }: Props) => {
     setCurrentPage(page);
   };
 
+  const pages: Pages[] = ["about", "talks", "skills"];
+
   return (
     <motion.div
       className={styles.container}
@@ -26,8 +28,11 @@ const Menu = ({ setCurrentPage }: Props) => {
       </span>
       <div className={styles.divider} />
       <div className={styles.options}>
-        <Button onClick={() => onMenuItemClick("about")}>About</Button>
-        <Button onClick={() => onMenuItemClick("talks")}>Talks</Button>
+        {pages.map((screen) => (
+          <Button key={screen} onClick={() => onMenuItemClick(screen)}>
+            {screen}
+          </Button>
+        ))}
         <Button
           onClick={() =>
             window.open(

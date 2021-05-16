@@ -36,6 +36,7 @@
 
 .options button {
   margin-bottom: 1.5em;
+  text-transform: capitalize;
 }
 
 .options button:not(:last-child):after {

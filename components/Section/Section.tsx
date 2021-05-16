@@ -3,12 +3,12 @@ import { ReactNode } from "react";
 import styles from "./Section.module.css";
 
 type Props = {
-  title?: string;
+  title: string;
   children: ReactNode;
   className?: string;
 };
 
-const Section = ({ title = "", children, className }: Props) => {
+const Section = ({ title, children, className }: Props) => {
   return (
     <motion.div
       className={`${styles.container} ${className}`}
