@@ -10,7 +10,7 @@ const levels = Array.from(Array(5), (_, i) => i + 1);
 
 const SkillBox = ({ label, level }: Props) => {
   return (
-    <div className={styles.skillBox}>
+    <motion.div className={styles.skillBox} whileHover={{ scale: 1.05 }}>
       {label}
       <div className={styles.levelContainer}>
         {levels.map((value) => {
@@ -35,7 +35,7 @@ const SkillBox = ({ label, level }: Props) => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
