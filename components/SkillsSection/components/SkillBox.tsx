@@ -16,8 +16,6 @@ const SkillBox = ({ label, level }: Props) => {
         {levels.map((value) => {
           const isActive = level >= value;
 
-          console.log({ value: value / 10 });
-
           return (
             <motion.span
               key={value}

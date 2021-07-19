@@ -31,8 +31,15 @@
   display: inline-flex;
   flex-wrap: wrap;
   margin-top: 1em;
+  width: 100%;
 }
 
 .title {
   margin-top: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .skillBox {
+    width: 100%;
+  }
 }

@@ -31,6 +31,7 @@ const SkillsSection = () => {
   const renderSkill = (skill) => (
     <SkillBox key={skill.label} label={skill.label} level={skill.level} />
   );
+
   return (
     <Section title="Skills">
       <h3 className={styles.title}>Programming languages</h3>

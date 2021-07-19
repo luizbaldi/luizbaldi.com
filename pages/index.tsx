@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Pages } from "types";
 import Head from "next/head";
 
@@ -12,12 +12,15 @@ import SkillsSection from "@components/SkillsSection";
 function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("menu");
 
-  const pages = {
-    menu: <Menu setCurrentPage={setCurrentPage} />,
-    about: <AboutSection />,
-    talks: <TalksSection />,
-    skills: <SkillsSection />,
-  };
+  const pages = useMemo(
+    () => ({
+      menu: <Menu setCurrentPage={setCurrentPage} />,
+      about: <AboutSection />,
+      talks: <TalksSection />,
+      skills: <SkillsSection />,
+    }),
+    []
+  );
 
   return (
     <>
