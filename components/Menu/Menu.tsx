@@ -1,18 +1,18 @@
 import Button from "@components/Button";
 import { motion } from "framer-motion";
-import { Pages } from "types";
+import { Page } from "types";
 import styles from "./Menu.module.css";
 
 type Props = {
-  setCurrentPage: (page: Pages) => void;
+  setCurrentPage: (page: Page) => void;
 };
 
 const Menu = ({ setCurrentPage }: Props) => {
-  const onMenuItemClick = (page: Pages) => {
+  const onMenuItemClick = (page: Page) => {
     setCurrentPage(page);
   };
 
-  const pages: Pages[] = ["about", "talks", "skills"];
+  const pages: Page[] = ["about", "talks", "skills"];
 
   return (
     <motion.div
@@ -35,10 +35,7 @@ const Menu = ({ setCurrentPage }: Props) => {
         ))}
         <Button
           onClick={() =>
-            window.open(
-              "https://www.notion.so/Resume-9c32a79994f64e188d7a5cb332bca42f",
-              "_blank"
-            )
+            window.open("https://bit.ly/luizbaldi-resume", "_blank")
           }
         >
           Resume

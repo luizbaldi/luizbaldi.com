@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Pages } from "types";
+import { Page } from "types";
 import Head from "next/head";
 
 import Menu from "@components/Menu";
@@ -10,7 +10,7 @@ import AboutSection from "@components/AboutSection";
 import SkillsSection from "@components/SkillsSection";
 
 function Home() {
-  const [currentPage, setCurrentPage] = useState<Pages>("menu");
+  const [currentPage, setCurrentPage] = useState<Page>("menu");
 
   const pages = useMemo(
     () => ({
