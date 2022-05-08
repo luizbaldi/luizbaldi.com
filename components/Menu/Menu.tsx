@@ -21,13 +21,19 @@ const Menu = ({ setCurrentPage }: Props) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2>Luiz Baldi</h2>
-      <code className={styles.code}>{"< software engineer />"}</code>
-      <span className={styles.bio}>
-        calm songs, walks, coffee, beer and code.
-      </span>
-      <div className={styles.divider} />
-      <div className={styles.options}>
+      <div className={styles.header}>
+        <h2>Luiz Baldi</h2>
+        <code className={styles.code}>{"< software engineer />"}</code>
+        <span className={styles.bio}>
+          calm songs, walks, coffee, beer and code.
+        </span>
+        <div className={styles.divider} />
+      </div>
+      <motion.div
+        className={styles.options}
+        initial={{ opacity: 0, y: "-20%" }}
+        animate={{ opacity: 1, y: 0 }}
+      >
         {pages.map((screen) => (
           <Button key={screen} onClick={() => onMenuItemClick(screen)}>
             {screen}
@@ -40,7 +46,7 @@ const Menu = ({ setCurrentPage }: Props) => {
         >
           Resume
         </Button>
-      </div>
+      </motion.div>
       <div className={styles.footer}>
         <a href="https://github.com/luizbaldi" target="_blank">
           <img src="/assets/github.png" alt="Github icon" />

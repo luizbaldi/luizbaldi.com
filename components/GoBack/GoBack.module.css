@@ -6,6 +6,14 @@
   align-items: center;
   font-size: 0.8em;
   margin-left: 3em;
+  background: none;
+  border: none;
+  color: var(--white);
+  outline: none;
+}
+
+.container:focus {
+  outline: none;
 }
 
 .container img {

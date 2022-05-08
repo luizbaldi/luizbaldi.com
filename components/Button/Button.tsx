@@ -12,7 +12,13 @@ const Button = ({ children, onClick = () => null }: Props) => {
     <motion.button
       className={styles.button}
       onClick={onClick}
-      whileHover={{ scale: 1.05 }}
+      variants={{
+        active: { scale: 1.05 },
+      }}
+      whileHover="active"
+      whileTap={{ scale: 1 }}
+      whileFocus="active"
+      role="button"
     >
       {children}
     </motion.button>

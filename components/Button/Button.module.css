@@ -11,6 +11,7 @@
   transition: font-weight 0.2s ease;
 }
 
-.button:hover {
-  font-weight: 400;
+
+.button:focus {
+  border: 2px solid var(--white);
 }
