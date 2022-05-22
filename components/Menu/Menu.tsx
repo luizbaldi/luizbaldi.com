@@ -4,12 +4,12 @@ import { Page } from "types";
 import styles from "./Menu.module.css";
 
 type Props = {
-  setCurrentPage: (page: Page) => void;
+  onPageChange: (page: Page) => void;
 };
 
-const Menu = ({ setCurrentPage }: Props) => {
+const Menu = ({ onPageChange }: Props) => {
   const onMenuItemClick = (page: Page) => {
-    setCurrentPage(page);
+    onPageChange(page);
   };
 
   const pages: Page[] = ["about", "talks", "skills"];
