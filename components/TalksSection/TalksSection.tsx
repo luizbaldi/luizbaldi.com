@@ -3,6 +3,11 @@ import Section from "@components/Section";
 
 const talks = [
   {
+    title: "JavaScript - Beyond the browser",
+    when: "Meetup Frontend BH - Jun/2022",
+    link: "https://slides.com/luizbaldi/alem-do-browser/",
+  },
+  {
     title: "From REST to GraphQL",
     when: "The Dev Tek - Dec/2019",
     link: "https://slides.com/luizbaldi/from-rest-to-graphql",
