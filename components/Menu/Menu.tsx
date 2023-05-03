@@ -2,6 +2,7 @@ import Button from "@components/Button";
 import { motion } from "framer-motion";
 import { Page } from "types";
 import styles from "./Menu.module.css";
+import FooterImage from "@components/Section/components/FooterImage";
 
 type Props = {
   onPageChange: (page: Page) => void;
@@ -49,22 +50,22 @@ const Menu = ({ onPageChange }: Props) => {
       </motion.div>
       <div className={styles.footer}>
         <a href="https://github.com/luizbaldi" target="_blank">
-          <img src="/assets/github.png" alt="Github icon" />
+          <FooterImage src="/assets/github.png" alt="Github icon" />
         </a>
         <a href="https://twitter.com/baldilp" target="_blank">
-          <img src="/assets/twitter.png" alt="Twitter icon" />
+          <FooterImage src="/assets/twitter.png" alt="Twitter icon" />
         </a>
         <a href="https://www.youtube.com/user/lpBaldi" target="_blank">
-          <img src="/assets/youtube.png" alt="Youtube icon" />
+          <FooterImage src="/assets/youtube.png" alt="Youtube icon" />
         </a>
         <a
           href="https://open.spotify.com/user/luizbaldi?si=rGNGJOgnRhqyaR2THj_XjQ"
           target="_blank"
         >
-          <img src="/assets/spotify.png" alt="Spotify icon" />
+          <FooterImage src="/assets/spotify.png" alt="Spotify icon" />
         </a>
         <a href="https://www.linkedin.com/in/luizbaldi" target="_blank">
-          <img src="/assets/linkedin.png" alt="Youtube icon" />
+          <FooterImage src="/assets/linkedin.png" alt="Youtube icon" />
         </a>
       </div>
     </motion.div>
