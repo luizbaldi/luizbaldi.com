@@ -1,31 +1,49 @@
 .box {
-  display: flex;
-  flex: 1;
   border-radius: 6px;
   height: 100%;
   background-color: var(--light-grey);
   max-width: calc(100vw - 4em);
+  position: relative;
 }
 
 .particlesContainer {
-  flex: 1;
   background-color: var(--dark-brown);
   border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
 .particles {
   height: 100%;
 }
 
+.contentContainer {
+  height: 100%;
+  display: flex;
+}
+
 .content {
-  flex: 1;
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 60%;
+  margin: auto;
+  background-color: var(--light-grey);
+  position: relative;
+  border-radius: 6px;
+  padding: 1em;
+  padding-bottom: 2em;
 }
 
 @media (max-width: 768px) {
   .particlesContainer {
     display: none;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
   }
 }

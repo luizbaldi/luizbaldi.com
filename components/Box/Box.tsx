@@ -27,14 +27,16 @@ const Box = ({ children }: Props) => {
           animate={{ opacity: 1 }}
         />
       </div>
-      <motion.div
-        className={styles.content}
-        transition={{ delay: 0.8, duration: 0.5 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        {children}
-      </motion.div>
+      <div className={styles.contentContainer}>
+        <motion.div
+          className={styles.content}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          {children}
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
