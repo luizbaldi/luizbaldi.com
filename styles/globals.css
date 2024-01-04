@@ -33,3 +33,7 @@ a,
 a:visited {
   color: var(--white);
 }
+
+p {
+  text-wrap: balance;
+}
