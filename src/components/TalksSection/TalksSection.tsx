@@ -1,5 +1,5 @@
 import styles from "./TalksSection.module.css";
-import Section from "@components/Section";
+import Section from "@/components/Section";
 
 const talks = [
   {
@@ -59,7 +59,7 @@ const TalksSection = () => {
     <Section title="Talks">
       {talks.map(({ title, when, link }) => (
         <div className={styles.talkItem} key={when}>
-          <a href={link}>{title}</a>
+          {link && <a href={link}>{title}</a>}
           <i>@ {when}</i>
         </div>
       ))}

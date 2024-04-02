@@ -1,5 +1,5 @@
 import styles from "./SkillsSection.module.css";
-import Section from "@components/Section";
+import Section from "@/components/Section";
 import SkillBox from "./components/SkillBox";
 
 type Skill = {
@@ -28,7 +28,7 @@ const libs: Skill[] = [
 ];
 
 const SkillsSection = () => {
-  const renderSkill = (skill) => (
+  const renderSkill = (skill: Skill) => (
     <SkillBox key={skill.label} label={skill.label} level={skill.level} />
   );
 

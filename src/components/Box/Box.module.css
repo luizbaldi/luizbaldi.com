@@ -2,13 +2,11 @@
   border-radius: 6px;
   height: 100%;
   background-color: var(--light-grey);
-  max-width: calc(100vw - 4em);
   position: relative;
 }
 
 .particlesContainer {
   background-color: var(--dark-brown);
-  border-radius: 6px;
   height: 100%;
   width: 100%;
   position: absolute;

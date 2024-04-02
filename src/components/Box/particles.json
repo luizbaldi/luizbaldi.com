@@ -43,8 +43,7 @@
       "onDiv": {
         "selectors": [],
         "enable": false,
-        "mode": [],
-        "type": "circle"
+        "mode": []
       },
       "onHover": {
         "enable": true,
@@ -62,9 +61,6 @@
         "distance": 200,
         "duration": 0.4,
         "speed": 1
-      },
-      "bounce": {
-        "distance": 200
       },
       "bubble": {
         "distance": 200,
@@ -135,10 +131,10 @@
             "enable": false,
             "bounce": {
               "horizontal": {
-                "random": {}
+                "random": true
               },
               "vertical": {
-                "random": {}
+                "random": true
               }
             },
             "overlap": {}
@@ -153,14 +149,13 @@
               "default": "destroy"
             },
             "speed": 2,
-            "angle": {},
             "attract": {
               "rotate": {}
             },
             "gravity": {},
             "path": {
               "delay": {
-                "random": {}
+                "random": true
               }
             },
             "trail": {}
@@ -175,32 +170,32 @@
               "startValue": "min",
               "destroy": "max"
             },
-            "random": {}
+            "random": true
           },
           "bounce": {
             "horizontal": {
-              "random": {}
+              "random": true
             },
             "vertical": {
-              "random": {}
+              "random": true
             }
           },
           "destroy": {
             "split": {
               "factor": {
-                "random": {}
+                "random": true
               },
               "rate": {
-                "random": {}
+                "random": true
               }
             }
           },
           "life": {
             "delay": {
-              "random": {}
+              "random": true
             },
             "duration": {
-              "random": {}
+              "random": true
             }
           },
           "number": {
@@ -208,7 +203,7 @@
           },
           "opacity": {
             "animation": {},
-            "random": {}
+            "random": true
           },
           "rotate": {
             "animation": {}

@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./GoBack.module.css";
+import chevronLeftIcon from "@/assets/chevron-left.svg";
 
 type Props = {
   isVisible: boolean;
@@ -21,7 +22,7 @@ const GoBack = ({ isVisible, resetNavigation }: Props) => {
         exit={{ opacity: 0 }}
         role="button"
       >
-        <img src="/assets/chevron-left.svg" alt="Arrow left" />
+        <img src={chevronLeftIcon} alt="Arrow left" />
         <span>Back</span>
       </motion.button>
     </AnimatePresence>

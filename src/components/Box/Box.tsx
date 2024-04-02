@@ -2,6 +2,7 @@ import { useEffect, ReactNode } from "react";
 import styles from "./Box.module.css";
 import { motion } from "framer-motion";
 import { tsParticles } from "tsparticles";
+import particlesJson from "./particles.json";
 
 type Props = {
   children: ReactNode;
@@ -9,7 +10,10 @@ type Props = {
 
 const Box = ({ children }: Props) => {
   useEffect(() => {
-    tsParticles.loadJSON("particles", "/particles.json");
+    // Temporary - This particles library will be removed in the next update
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    tsParticles.load("particles", particlesJson);
   }, []);
 
   return (
